@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /scripts/
+Disallow: /temp/
+Disallow: /private/
+
+# Permitir el acceso a las áreas importantes del sitio
+Allow: /menu/
+Allow: /productos/
+Allow: /ofertas/
+Allow: /blog/
+Allow: /imagenes/
+Allow: /css/
+Allow: /js/
+
+# Específico para Googlebot
+User-agent: Googlebot
+Disallow: /no-google/
+Allow: /menu/
+Allow: /productos/
+Allow: /ofertas/
+Allow: /blog/
+
+# Sitemap para ayudar a los motores de búsqueda a encontrar todas las páginas importantes
+Sitemap: https://www.tusitio.com/sitemap.xml
